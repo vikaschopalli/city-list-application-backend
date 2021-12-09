@@ -7,6 +7,10 @@ import org.springframework.data.repository.query.Param;
 
 import com.test.citylist.entity.City;
 
+/**
+ * @author Vikas
+ *
+ */
 public interface CityRepository extends PagingAndSortingRepository<City, Long> {
 
 	Page<City> findByNameContaining(final @Param("name") String name,final Pageable pageable);
