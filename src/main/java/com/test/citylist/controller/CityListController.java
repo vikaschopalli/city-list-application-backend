@@ -88,6 +88,7 @@ public class CityListController {
 	 * by it id
 	 */
 	@GetMapping("/city/{id}")
+	@PreAuthorize(value = "hasRole('ROLE_ALLOW_EDIT')")
 	public ResponseEntity<City> findCityById(@PathVariable final Long id) {
 		try {
 
