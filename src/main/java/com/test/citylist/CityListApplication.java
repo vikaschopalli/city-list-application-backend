@@ -14,5 +14,6 @@ public class CityListApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(CityListApplication.class, args);
+
 	}
 }

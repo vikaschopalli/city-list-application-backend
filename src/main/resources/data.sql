@@ -998,4 +998,8 @@ INSERT INTO city VALUES('997','Belgaum','http://upload.wikimedia.org/wikipedia/c
 INSERT INTO city VALUES('998','Suez','http://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Iss016e019375.jpg/330px-Iss016e019375.jpg');
 INSERT INTO city VALUES('999','Yazd','http://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Iran_-_Yazd_-_Amir_Chakmaq_Complex.jpg/500px-Iran_-_Yazd_-_Amir_Chakmaq_Complex.jpg');
 INSERT INTO city VALUES('1000','Gaoping','http://upload.wikimedia.org/wikipedia/commons/thumb/9/92/ChinaJinchengGaoping.png/500px-ChinaJinchengGaoping.png');
+
+INSERT INTO `USER` (`USERNAME`,`PASSWORD`,`ROLE`,`ENABLED`,`HAS_EDIT_ACCESS`) VALUES ('admin','{noop}admin','ROLE_ALLOW_EDIT', 1,true);
+INSERT INTO `USER` (`USERNAME`,`PASSWORD`,`ROLE`,`ENABLED`,`HAS_EDIT_ACCESS`) VALUES ('user','{noop}user','ROLE_USER', 1,false);
+
 COMMIT;
